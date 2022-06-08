@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+} 
+body{
+    overflow-x: hidden;
+}
+
+
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+
+nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+
+nav ul li{
+    margin: 0 5px;
+}
+
+
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: #111;
+    background: #fff;
+    text-decoration: underline  black ;
+} 
+
+
+
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+@media (max-width: 1000px){
+
+    nav{
+        padding: 0 40px 0 50px;
+    }
+
+}
+@media (max-width: 750px) {
+    nav .menu-btn i{
+        display: block;
+}
+
+
+#click:checked ~ .menu-btn i:before{
+
+    content: "\f00d";
+
+}
+
+
+
+
+nav ul{
+
+
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+
+#click:checked ~ ul{
+    left: 0;
+}
+
+
+nav ul li{
+    width: 100%;
+    margin: 40px 0;
+}
+
+
+nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+#click:checked ~ ul li a{
+    margin-left: 0px;
+}
+
+
+
+nav ul li a:hover{
+    background: none;
+    color: cyan;
+
+} 
+} 
+
+
+
+/* partie section  */
+
+.section{
+    overflow: hidden;
+    background-image: url(image/backround.jpg);
+    background-size: cover;
+    z-index: 100;
+    min-height: 110vh;
+}
+
+.h1_section{
+
+    position: absolute;
+    width: 482px;
+    height: 124px;
+    left: 125px;
+    top: 232px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 144px;
+
+    color:white;
+}
+
+.p_section{
+    position: absolute;
+    width: 481.55px;
+    height: 176.9px;
+    left: 125px;
+    top: 356px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 72px;
+
+    color: #EDF8FF;
+
+}
+
+.etterium{
+    /* border:2px solid white; */
+    width: 1100px;
+    position: relative;
+    top:65px;
+    right: -450px;
+
+}
+
+/* responsive la parti d'accuiel */
+
+@media (max-width:1150px) {
+    .etterium{
+        width: 900px;
+        right: -400px;
+    
+    }
+
+    
+}
+
+
+@media (max-width:1060px) {
+    .etterium{
+        width: 850px;
+        right: -400px;
+    
+    }
+
+
+    .h1-section{
+        
+        font-weight: 700;
+        font-size: 90px;
+        
+    
+        
+        
+        
+
+    }
+
+    .p-section{
+        
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+
+    
+}
+
+
+
+@media (max-width:1060px) {
+    .etterium{
+        
+        right: -350px;
+        top: 124px;
+    
+    }   
+}
+
+
+@media (max-width:972px){
+    .etterium{
+        
+        right: -350px;
+        top: 124px;
+    
+    }  
+
+    .h1-section{
+
+        
+        
+        top: 260px;
+    
+        
+        font-weight: 600;
+        font-size: 50px;
+        
+    
+    }
+    
+    .p-section{
+        
+        
+        
+        font-weight: 200;
+        font-size: 40px;
+        line-height: 60px;
+    
+        
+    
+    }
+
+
+    
+}
+
+
+
+/* partie de service de metaser */
+
+.ser{
+    background:url(image/image\ 15.png);
+    padding: 40px 0;
+    z-index: -1;
+}
+
+.colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px ;
+}
+
+.ser>.colum> h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 155.5%;
+    text-align: center;
+
+    color: #ffff;
+}
+
+.ligne{
+    border: 2px solid white;
+    width: 170px;
+}
+
+.init{
+    width: 250px;
+    
+    /* -webkit-box-shadow: 19px 13px 14px 3px rgba(0,0,0,0.77);  */
+    box-shadow: 19px 13px 14px 3px rgba(0,0,0,0.77);
+}
+
+.span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    padding-top: 20px;
+
+    color: #FFFFFF;
+}
+
+.lay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.our{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    gap:20px;
+    
+}
+
+
+/* welcome partie */
+
+.welcome{
+    background: url(image/Group_19.png);
+    padding: 60px 0 50px 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.mero{
+    width: 50%;
+    border-radius: 2px;
+    backdrop-filter:blur(6px) ;
+
+    
+}
+
+
+.h2_welcome{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    
+    
+
+
+    color: #FFFFFF;
+}
+
+.p_welcome{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    
+
+
+    color: #FFFFFF;
+}
+
+/* explication de services */
+
+
+.glodser{
+    background: url(image/backround.jpg);
+    background-size: cover;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.dservice{
+    
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    place-items: center;
+    background: #082447;
+
+    margin: 70px 0;
+    
+
+    
+}
+
+.dservice:nth-child(3){
+    margin-bottom: 0px;
+}
+
+
+.explication{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+}
+
+
+.phone,
+.ordinateur,
+.crypto{
+    width: 300px;
+}
+
+.dservice:nth-child(2) > img{
+    grid-column: 2/3;
+
+}
+
+.dservice:nth-child(2) > .explictaion{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left:70px ;
+    
+
+}
+
+
+
+
+
+.h1_explication{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: white;
+    padding-bottom: 30px;
+
+}
+
+
+.p_explication{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    text-indent: 2px;
+    padding:0 70px 20px 0;
+
+    color: #FFFFFF;
+}
+
+.button{
+    background: linear-gradient(267.48deg, #98D1FE -9.91%, #22BCDE 96.36%);
+    border: 2px solid ;
+    border-radius: 15px;
+    width: 120px;
+    position: relative; 
+    right: -0px;
+
+}
+
+.button:hover{
+    background: radial-gradient(circle, rgba(71,93,208,1) 0%, rgba(20,20,23,1) 100%);
+    color: #111;
+    /* transform: 40s; */
+
+}
+
+
+
+
+
+
+/* partie css de contacts */
+
+
+
+.contat{
+
+    
+    background: url(image/backround.jpg);
+    background-size: cover;
+    padding: 80px 100px  10px 100px; 
+    position: relative;
+    
+}
+
+
+
+
+
+.back{
+    /* height: 450px; */
+    /* width: 1000px; */
+    
+    margin: 80px  80px ;
+    padding: 20px 40px ;
+    background-color:  #082447;
+    display :flex;
+    justify-content: space-evenly ;
+    gap:40px;
+    
+}
+
+
+.border1, 
+.border2{
+    z-index: 999;
+    margin: 0px  0px;
+    padding: 20px 0px  5px 0px;
+    /* border: 3px solid white; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.border1>.toto{
+    margin-bottom: 70px ;
+    width: 260px;
+}
+
+
+.div{
+    margin-top: 120px;
+    margin-bottom: 80px ;
+    border: 1px solid white;
+
+}
+
+h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 170.5%;
+    border-bottom:  2px solid white ;
+    
+    width: 245px;
+    padding:1px 0px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    letter-spacing: 0.085em;
+
+    color: #FFFFFF;
+}
+
+
+input{
+    width: 100%;
+    height: 30px;
+    padding: 5px 20px;
+    border-radius:5px;
+    
+}
+
+
+.inmessage{
+    height: 100px;
+    padding: 2px 20px;
+    border-radius:5px;
+    margin-bottom: 14px;
+}
+
+.sarokh{
+    width: 300px; 
+    position: absolute;
+    left: 180px;
+    z-index: 1;
+    top:20px;
+    
+}
+
+button{
+    background: linear-gradient(267.48deg, #98D1FE -9.91%, #22BCDE 96.36%);
+    border: 2px solid ;
+    border-radius: 15px;
+    width: 120px;
+    position: relative;
+    right: -180px;
+
+}
+
+button:hover{
+    background: radial-gradient(circle, rgba(71,93,208,1) 0%, rgba(20,20,23,1) 100%);
+    color: #111;
+    /* transform: 40s; */
+
+}
+
+
+
+
+
+
+
+
+
+.text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 26px;
+    line-height: 39px;
+    
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+
+
+/* footer parti */
+
+footer{
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 129px;
+    background: #001B2E;
+}
+
+.h1_footer{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.fa-discord,
+.fa-twitter ,
+.fa-instagram{
+    font-size: 30px !important;
+
+}
+
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap:40px;
+    letter-spacing: 2px;
+    color:white;
+    
+}
+
+/* parti responsive pour footer */
+
+@media  (max-width: 910px) {
+
+    .h1_footer{
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+    footer{
+        padding: 30px 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        height: 200px;
+        background: #001B2E;
+    }
+
+
+    
+}
