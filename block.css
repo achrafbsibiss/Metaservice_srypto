@@ -7,24 +7,33 @@
     
 } 
 body{
+    background-color: #0A3F62;
     overflow-x: hidden;
 }
 
 
+.logo{
+    display: flex;
+
+}
+
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     display: flex;
     height: 80px;
     width: 100%;
-    background: #1b1b1b;
+    background: #08152C;
+    backdrop-filter: blur(70px);
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
+
+
 
 
 nav .logo{
@@ -63,9 +72,9 @@ nav ul li a{
 
 nav ul li a.active,
 nav ul li a:hover{
-    color: #111;
-    background: #fff;
-    text-decoration: underline  black ;
+
+    padding-bottom: 3px;
+    border-bottom: 4px solid white;
 } 
 
 
@@ -82,7 +91,7 @@ nav .menu-btn i{
 input[type="checkbox"]{
     display: none;
 }
-
+ 
 
 @media (max-width: 1000px){
 
@@ -160,6 +169,7 @@ nav ul li a:hover{
 /* partie section  */
 
 .section{
+    
     overflow: hidden;
     background-image: url(image/backround.jpg);
     background-size: cover;
@@ -183,6 +193,9 @@ nav ul li a:hover{
 
     color:white;
 }
+.meta{
+    position: relative;
+}
 
 .p_section{
     position: absolute;
@@ -204,7 +217,7 @@ nav ul li a:hover{
 .etterium{
     /* border:2px solid white; */
     width: 1100px;
-    position: relative;
+    position: absolute;
     top:65px;
     right: -450px;
 
@@ -339,8 +352,6 @@ nav ul li a:hover{
 .init{
     width: 250px;
     
-    /* -webkit-box-shadow: 19px 13px 14px 3px rgba(0,0,0,0.77);  */
-    box-shadow: 19px 13px 14px 3px rgba(0,0,0,0.77);
 }
 
 .span{
@@ -375,7 +386,7 @@ nav ul li a:hover{
 /* welcome partie */
 
 .welcome{
-    background: url(image/Group_19.png);
+    background: url(image/nft_file.jpeg);
     padding: 60px 0 50px 40px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -388,7 +399,7 @@ nav ul li a:hover{
 .mero{
     width: 50%;
     border-radius: 2px;
-    backdrop-filter:blur(6px) ;
+    /* backdrop-filter:blur(6px) ; */
 
     
 }
@@ -435,6 +446,7 @@ nav ul li a:hover{
     background: #082447;
 
     margin: 70px 0;
+    padding: 20px 70px;
     
 
     
@@ -458,7 +470,7 @@ nav ul li a:hover{
 .phone,
 .ordinateur,
 .crypto{
-    width: 300px;
+    width: 400px;
 }
 
 .dservice:nth-child(2) > img{
@@ -522,6 +534,65 @@ nav ul li a:hover{
 
 
 
+@media(max-width:850px){
+
+
+    .phone,
+    .ordinateur,
+    .crypto{
+        width: 250px;
+    }
+
+
+    .p_explication{
+        
+        font-size: 12px;
+        line-height: 20px;
+        
+        
+        padding:0 70px 20px 0;
+    
+        
+    }
+
+    .h1_explication{
+        
+        font-weight: 600;
+        font-size: 25px;
+        padding-bottom: 20px;
+        
+    
+    }
+    
+
+
+}
+
+@media(max-width:650px){
+    .dservice{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        
+    }
+
+    .p_explication{
+        padding:0;
+        padding-bottom: 10px;
+    }
+
+    .explication{
+        padding: 100px;
+    }
+
+    
+        
+}
+
+
+
 
 
 
@@ -544,10 +615,9 @@ nav ul li a:hover{
 
 
 .back{
-    /* height: 450px; */
-    /* width: 1000px; */
     
-    margin: 80px  80px ;
+    
+    margin: 80px  0px ;
     padding: 20px 40px ;
     background-color:  #082447;
     display :flex;
@@ -559,8 +629,8 @@ nav ul li a:hover{
 
 .border1, 
 .border2{
-    z-index: 999;
-    margin: 0px  0px;
+    z-index: 50;
+    /* margin: 0px  0px; */
     padding: 20px 0px  5px 0px;
     /* border: 3px solid white; */
     display: flex;
@@ -570,14 +640,14 @@ nav ul li a:hover{
 
 .border1>.toto{
     margin-bottom: 70px ;
-    width: 260px;
+    
 }
 
 
 .div{
     margin-top: 120px;
     margin-bottom: 80px ;
-    border: 1px solid white;
+    border: 2px solid white;
 
 }
 
@@ -586,11 +656,11 @@ h3{
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
-    line-height: 170.5%;
-    border-bottom:  2px solid white ;
+    /* correction de la line  */
+    text-decoration: underline;
     
-    width: 245px;
-    padding:1px 0px;
+    
+    padding:px 0px;
     text-align: center;
     margin-bottom: 30px;
     
@@ -601,7 +671,7 @@ h3{
 
 
 input{
-    width: 100%;
+    width: 95%;
     height: 30px;
     padding: 5px 20px;
     border-radius:5px;
@@ -619,9 +689,9 @@ input{
 .sarokh{
     width: 300px; 
     position: absolute;
-    left: 180px;
+    left: 120px;
     z-index: 1;
-    top:20px;
+    top:40px;
     
 }
 
@@ -629,9 +699,9 @@ button{
     background: linear-gradient(267.48deg, #98D1FE -9.91%, #22BCDE 96.36%);
     border: 2px solid ;
     border-radius: 15px;
-    width: 120px;
-    position: relative;
-    right: -180px;
+    width: 150px;
+    margin-left: 135px;
+
 
 }
 
@@ -672,6 +742,32 @@ button:hover{
 
     color: #FFFFFF;
 }
+
+@media (max-width:700px) {
+
+    .border1, 
+    .border2{
+       
+        padding: 20px 0px  5px 0px;
+        
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .toto{
+        padding-left: 40px;
+        
+    }
+
+    .back{
+        flex-direction: column;
+        
+    }
+    
+}
+
+
 
 
 
