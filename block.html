@@ -11,51 +11,57 @@
 
 <body>
 
-    <div class="section">
-            
 
+
+    
+    <header class="section">
         <nav>
             <div class="logo">
-                <img src="image/logo svg.svg" alt="" class="sermeta">
-                <h1> MetaSer</h1>
+                <img src="image/nv1logo.svg" alt="" class="sermeta">
+                <h1 class="teta"> MetaSer</h1>
             </div>
 
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
             </label>
-    
                 <ul>
                     
                 
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="#serva">Services</a></li>
+                <li><a href="#conta">Contact</a></li>
                 
                 </ul>
-        </nav>
-            
+        </nav> 
+    </header>
+    
+    
+    <section class="meta">
+            <div class="roro">
+                    <h1 class="h1_section"> MetaSer</h1>
+                    <p class="p_section">Blockchain in the most promising technology since the internet.</p>
+            </div>
 
-            <section class="meta">
-                
-                
-                    <div class="roro">
-                            <h1 class="h1_section"> MetaSer</h1>
-                            <p class="p_section">Blockchain in the most promising technology since the internet.</p>
-                    </div>
-
-                    <img src="image/ettherium_background_2.png" alt="" class="etterium">
-                
-            </section>
-        
-        
-    </div>
+            <img src="image/ettherium_background_2.png" alt="" class="etterium">
+    </section>
 
 
 
+
+
+
+
+
+    
 <!-- our sevice -->
 
-    <article class="ser">
+
+
+
+
+
+    <article class="ser" id="serva">
 
         <div class="colum">
 
@@ -75,7 +81,7 @@
 
                 <article class="lay">
                     <img class="init" src="image/icon1.png" alt="">
-                    <span class="span">Make a Transaction</span>
+                    <span class="span">Transaction</span>
                 </article>
 
                 <article class="lay">
@@ -102,17 +108,28 @@
     </div>
 </div>
 
+
+
+
+
+
+
+
 <!-- explication de services -->
+
+
+
+
 
 <div class="glodser">
 
     <div class="dservice">
 
         <img src="image/phone.png" alt="" class="phone">
-
+        
         <section class="explictaion">
-
             <h1 class="h1_explication">What is a digital wallets</h1>
+
             <p class="p_explication">
                 What is the description of digital wallets?
                 Image result for a small description about a e-wallet
@@ -182,7 +199,7 @@
 
 
 
-</div> 
+</div>  
 
 
 
@@ -190,7 +207,7 @@
 
 
 
-    <section class="contat" >
+    <section class="contat"  id="conta" >
 
         <img src="image/sarokh.png" alt="" class="sarokh">
 
@@ -212,38 +229,45 @@
             <div class="border2">
                 <h3>Contact Us</h3>
     
-                <span class="text">Name</span>
-                <input type="text">
+                <span class="text">Full Name</span>
+                <input name="data[Contact][name]" maxlength="25" type="text" required>
+                
+                <span class="text">Email</span>
+                <input  name="data[Contact][mail]" maxlength="25" type="email"  required>
+    
+                <span class="text">Phone</span>
+                <input name="data[Contact][number]" maxlength="10" placeholder="+212" type="number"  required>
     
                 <span class="text">Name</span>
-                <input type="email">
-    
-                <span class="text">Name</span>
-                <input type="number">
-    
-                <span class="text">Name</span>
-                <input type="text" class="inmessage">
+                <input  name="data[Contact][content]" maxlength="100"  type="text" class="inmessage"  required>
     
                 <button>
-                    <span class="text">Send</span>
+                    <span class="text" value="send">Send</span>
                 </button>
     
             </div>
     
         </div>
 
-    </section>
+    </section> 
 
 
-    <footer>
-        <h1 class="h1_footer">MeraSer</h1>
+    <footer id="about">
+        
+
+        <div class="naruto">
+            <img src="image/nv1logo.svg" alt="" class="sermeta1">
+            <h1 class="h1_footer">MertaSer</h1>
+        </div>
         <div class="icon">
             <i class="fa-brands fa-instagram" class="ten"></i>
             <i class="fa-brands fa-twitter" class="ten"></i>
             <i class="fa-brands fa-discord" class="ten"></i>
         </div>
 
-    </footer>  
+    </footer>    
+
+
 
 </body>
 </html> 
